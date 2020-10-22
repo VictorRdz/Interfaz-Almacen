@@ -1,0 +1,17 @@
+<div class="grid-x grid-margin-x align-center topbar">
+  <div class="cell small-2 medium-1 topbar__item">
+      <i class="topbar__menu material-icons" (click)="switchSidebar()">menu</i>
+  </div>
+  <div class="cell small-8 medium-1 topbar__item">
+    <div class="topbar__logo"><i class="material-icons">store</i><span>INV</span></div>
+  </div>
+  <div class="cell small-2 medium-1 medium-order-2 topbar__item">
+    <i class="material-icons topbar__account">account_circle</i>
+  </div>
+  <form class="cell small-11 medium-9 medium-order-1 topbar__item" (ngSubmit)="buscar($event)">
+    <input name="busqueda" type="text" placeholder="Buscar producto" class="topbar__search-box">
+    <button type="submit" class="topbar__search-button">
+      <i class="material-icons">search</i>
+    </button>
+  </form>
+</div>

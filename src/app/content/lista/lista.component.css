@@ -1,0 +1,9 @@
+.table__link:hover {
+    color: rgb(86, 129, 221) !important;
+    cursor: pointer;
+    
+}
+
+.table__link {
+    display:flex !important;
+}

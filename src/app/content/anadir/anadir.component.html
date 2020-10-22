@@ -1,0 +1,29 @@
+<h1 class="title">Añadir producto</h1>
+<br>
+<form #productoForm="ngForm">
+<div class="grid-x grid-margin-x">
+  <div class="cell medium-3">
+    <label>Código:</label>
+    <input type="text" id="codigo" placeholder="686GJF4FDBN">
+    <label>Precio por unidad:</label>
+    <div class="input-group">
+      <span class="input-group-label">$</span>
+      <input type="number" id="precio" class="input-group-field" placeholder="1,000" min="0">
+    </div>
+    <label>Cantidad:</label>
+    <input type="number" id="cantidad" placeholder="300" min="1">
+  </div>
+  <div class="cell medium-9">
+    <label>Nombre:</label>
+    <input type="text" id="nombre" placeholder="Nombre del producto">
+    <label>Descripción:</label>
+    <textarea rows="7" id="descripcion" placeholder="Descripción del producto"></textarea>
+  </div>
+</div>
+<hr>
+<div class="grid-x grid-margin-x align-center">
+  <div class="cell medium-8">
+    <input type="button" value="Añadir producto" class="button expanded large">
+  </div>
+</div>
+</form>

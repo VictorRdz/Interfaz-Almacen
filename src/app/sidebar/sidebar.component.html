@@ -1,0 +1,5 @@
+<div class="sidebar" [ngStyle]="{'display': display}">
+  <ng-container *ngFor="let item of items">
+    <app-sidebar-item [icon]='item.icon' [text]='item.text' [link]='item.link'></app-sidebar-item>
+  </ng-container>
+</div>

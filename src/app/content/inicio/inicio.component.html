@@ -1,0 +1,12 @@
+<h1 class="title">Inicio</h1>
+<div class="grid-x grid-margin-x align-center">
+  <div class="cell small-12 medium-10" style="text-align: center;">
+    <div *ngIf="chart">
+        <br class="show-for-small-only">
+        <br class="show-for-small-only">
+        <br class="show-for-small-only">
+        <b>Ventas totales en 2019</b><br><br>
+        <canvas #myCanvas>{{ chart }}</canvas>
+    </div>
+  </div>
+</div>
